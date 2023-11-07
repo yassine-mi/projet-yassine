@@ -1,10 +1,157 @@
-header{
-display: flex;
-justify-content: center;
-justify-content: space-between;
+:root {
+    --bg-color: #070031;
+    --text-color: #000000;
+    --main-color: #064905;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+    --pading: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1.7rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 1.5rem;
 
 }
 
-.nav-links{
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+
+nav {
+    padding-top: 2.2rem;
+    padding-left: var(--pading);
+    padding-right: var(--pading);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+
+
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--pading);
+    display: flex;
+    align-items: center;
+    flex-direction: ;
+}
+
+.container-text {
+    position: relative;
+    bottom: 70px;
+}
+
+.content .social-media {
+    flex-direction: column;
+}
+
+
+.social {
+    margin: 1rem;
+}
+
+.content .container-text .social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: 0.19rem solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0.2rem .5rem var(--shadow-color);
+    font-size: 1.5rem;
+    color: var(--main-color);
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+
+.content .container-text .social a:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.container-images {
+    background-image: url();
+
+    width: 45%;
+    height: 90%;
+    position: relative;
+}
+
+.container-images img{
+    position: ab;
 }
