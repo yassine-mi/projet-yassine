@@ -93,6 +93,8 @@ nav ul li a:hover {
     border: 2px solid transparent;
     transition: 0.4s;
     cursor: pointer;
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -154,4 +156,13 @@ nav ul li a:hover {
 
 .container-images img{
     position: ab;
+}
+
+nav button .btn{
+    text-decoration: none;
+    color: var(--white-color);
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
 }
