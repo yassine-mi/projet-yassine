@@ -8,14 +8,15 @@
 }
 
 * {
+    width: auto;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
     box-sizing: border-box;
 }
 
 
 html {
-
+    
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: white;
@@ -53,12 +54,19 @@ span {
 
 
 nav {
+    background-color: var(--bg-color);
     padding-top: 2.2rem;
     padding-left: var(--pading);
     padding-right: var(--pading);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 2%;
+    z-index: 1;
 }
 
 nav ul li {
@@ -109,7 +117,8 @@ nav ul li a:hover {
 
 .content {
     flex-grow: 1;
-    padding: 0 var(--pading);
+    padding-left:  var(--pading);
+    padding-top: 200px;
     display: flex;
     align-items: center;
 }
