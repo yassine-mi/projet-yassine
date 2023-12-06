@@ -1,0 +1,126 @@
+@media only screen and (max-width: 600px) {
+:root {
+    padding: 1.5rem;
+}
+html{
+    font-size: 12px;
+}
+nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    padding-top: 0;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--bg2-color);
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg2-color);
+}
+
+nav ul.is-active{
+    display: block;
+}
+
+nav ul li {
+    display: block;
+    text-align: center;
+    margin: 15%;
+}
+nav ul li a {
+    font-size: 25px;
+}
+
+h1{
+font-size: 2.5rem;
+
+}
+
+
+.btn1{
+    display: none;
+}
+.acceuil{
+    margin-left: -10%;
+    margin-bottom: -10%;
+}
+
+.social {
+    padding-bottom: 2rem;
+}
+
+
+.burger{
+    display: block;
+}
+
+.about{
+    margin-left: -50%;
+}
+
+
+.about .container-images img{
+    display: none;
+}
+.burger span{
+    display: block;
+}
+
+.container-text .btn{
+    display: block;
+
+
+  }
+  .about .container-text{
+    width: 100%;
+  }
+
+
+
+
+  .skills .container-images img{
+    display: none;
+  }
+  .skills{
+    margin-left: -5.5%;
+  }
+  .skills .container-text{
+    justify-content: center;
+    width: 100%;
+  }
+  
+
+
+  section .heading{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  section{
+    margin-left: -3rem;
+  }
+
+
+  #messages{
+    width: 93%;
+  }
+
+  
+    footer h6{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  footer{
+    justify-content: center;
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+  }

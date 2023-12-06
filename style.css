@@ -11,12 +11,11 @@
     width: auto;
     margin: 0;
     padding-left: 0;
-    box-sizing: border-box;
 }
 
 
 html {
-    
+    width: 100%;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     color: white;
@@ -55,7 +54,7 @@ span {
 
 nav {
     background-color: var(--bg-color);
-    padding-top: 2.2rem;
+    height: 100px;
     padding-left: var(--pading);
     padding-right: var(--pading);
     display: flex;
@@ -64,8 +63,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
-    padding-bottom: 2%;
+    left: 0;border-bottom: 1px solid var(--bg2-color);
     z-index: 1;
 }
 
@@ -76,6 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 1.2rem;
     color: var(--white-color);
     text-decoration: none;
     text-transform: capitalize;
@@ -88,15 +87,14 @@ nav ul li a:hover {
 
 }
 
-.home {
-    width: 100%;
+.acceuil {
     height: 100vh;
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
 }
 
-.btn {
+.btn1 {
     background-color: var(--main-color);
     color: var(--white-color);
     text-decoration: none;
@@ -110,10 +108,97 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: transparent;
     border: 2px solid var(--main-color);
 }
+
+
+
+
+
+
+
+
+
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: none;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content {
     flex-grow: 1;
@@ -123,7 +208,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.home .container-text {
+.acceuil .container-text {
     position: relative;
     bottom: 70px;
 }
@@ -135,9 +220,10 @@ nav ul li a:hover {
 
 .social {
     margin: 1rem;
+    padding: auto;
 }
 
-.home .content .container-text .social a {
+.acceuil .content .container-text .social a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -155,11 +241,30 @@ nav ul li a:hover {
 
 }
 
-.home .content .container-text .social a:hover {
+.container-text .btn{
+    display: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--white-color);
+    text-decoration: none;
+  }
+  .btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+.acceuil .content .container-text .social a:hover {
     background-color: var(--main-color);
     color: var(--white-color);
 }
-.home .container-images {
+.acceuil .container-images {
     background-image: url();
     height: 90%;
     width: 30%;
@@ -167,7 +272,7 @@ nav ul li a:hover {
     align-items: flex-end;
 }
 
-.home .container-images img{
+.acceuil .container-images img{
     position: absolute;
     bottom: 0;
     height: 100%;
@@ -181,6 +286,7 @@ nav button .btn{
     color: var(--white-color);
 }
 a{
+    font-size: 1rem;
     text-decoration: none;
     color: var(--white-color);
 }
@@ -252,6 +358,60 @@ section .heading{
     justify-content: center;
 }
 
+
+
+footer p{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn2 {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    cursor: pointer;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.btn2:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+
+footer h6{
+    background-color: var(--bg2-color);
+    color: rgb(255, 250, 250);
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+}
+
+
+.btn2 #btn3{
+    padding-top: 20px;
+}
+
+.skills .container-text .btn2{
+    margin-top: 20px;
+    margin-left: 57px;
+    
+}
+.about .container-text #btn3{
+    margin-top: 20px;
+    margin-left: 150px;
+    
+}
+
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
@@ -280,61 +440,6 @@ section .heading{
     resize: none;
 }
 
-footer p{
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.btn2 {
-    background-color: var(--main-color);
-    color: var(--white-color);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0.8rem 1.8rem;
-    border-radius: 30px;
-    border: 2px solid transparent;
-    transition: 0.4s;
-    cursor: pointer;
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.btn2:hover {
-    background-color: transparent;
-    border: 2px solid var(--main-color);
-}
-
-
-footer h6{
-    background-color: var(--bg2-color);
-    color: rgb(255, 250, 250);
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    padding-bottom: 25px;
-    padding-left: 34%;
-}
-
-
-.btn2 #btn3{
-    padding-top: 20px;
-}
-
-.skills .container-text .btn2{
-    margin-top: 20px;
-    margin-left: 57px;
-    
-}
-.about .container-text #btn3{
-    margin-top: 20px;
-    margin-left: 150px;
-    
-}
 
 
 
